@@ -2,21 +2,22 @@
 <div id="app">
   <comA/>
   <hr>
-  <h1>{{$store.state}}</h1>
+  <comB/>
 </div>
 </template>
 
 <script>
 import ComA from "@/components/ComA.vue"
+import ComB from "@/components/ComB.vue"
 export default {
   name:"App",
   components:{
-    ComA
+    ComA,ComB
   },
-  mounted(){
+  // mounted(){
     
-    setInterval(()=>{this.$store.state.count ++ },100)
-  }
+  //   setInterval(()=>{this.$store.state.count ++ },100)
+  // }
 }
 </script>
 
